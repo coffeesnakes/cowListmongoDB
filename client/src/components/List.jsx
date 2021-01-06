@@ -7,7 +7,7 @@ const List = props => {
 
       {props.cows.map((cow) => (
 
-      < Entry key={cow.id} cow={cow} deleteCow={props.deleteCow} editCow={props.editCow} />
+      < Entry key={cow._id} cow={cow} deleteCow={props.deleteCow} editCow={props.editCow} />
 
       ))}
 

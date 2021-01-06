@@ -6,4 +6,23 @@
 3. create components to dynamically render  list of ENTRIES
 create functionality to add new items to the database through posting with API
 
+
  **Make sure you understand schemas**
+
+
+
+
+Question in addcows somewhere.
+
+Go over flow of put.
+
+I think that the ID sent in the editCow's axios post (inside of App) is the target.
+This id is gotten  when you click on the edit button inside of Entry.js
+The ID is the first thing sent in the post, second is the new name(?)
+so in the model we target the req.params.id  but then im not sure on the second part
+are we attatching the new name to req.body and then having to specify the object with
+{new: true} to let mongo know that this is an update to the field?
+and then the callback is what send all of that back to the client.
+
+vvvvv docs for this  vvvvv
+https://mongoosejs.com/docs/tutorials/findoneandupdate.html

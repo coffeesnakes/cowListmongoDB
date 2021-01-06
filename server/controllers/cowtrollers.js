@@ -20,7 +20,30 @@ const addCow = (req, res) => {
   })
 }
 
+const deleteCow = (req, res) => {
+  model.deleteCow(req.params.id, (err, data) => {
+    if (err) {
+      res.sendStatus(400);
+    } else {
+      res.sendStatus(200);
+    }
+  })
+};
+
+const editCow = (req, res) => {
+  console.log("sending in controller");
+  model.editCow(req, (err, alteredcowrbon) => {
+    if (err) {
+      res.sendStatus(400);
+    } else {
+      res.sendStatus(201);
+    }
+  })
+}
+
 module.exports = {
   getCows,
-  addCow
+  addCow,
+  deleteCow,
+  editCow
 }

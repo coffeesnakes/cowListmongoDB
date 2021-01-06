@@ -44,12 +44,14 @@ class App extends React.Component {
   }
 
   deleteCow(id) {
+
     axios.delete(`/cows/${id}`)
     .then(this.getCows)
     .catch(console.log)
   }
 
   editCow(id, name) {
+    console.log(id, name)
     axios.put(`/cows/${id}`, name)
     .then(this.getCows)
     .catch(console.log)

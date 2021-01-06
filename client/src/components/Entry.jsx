@@ -16,13 +16,15 @@ class Entry extends Component {
   }
 
   handleDelete() {
-    this.props.deleteCow(this.props.cow.id);
+    console.log(this.props)
+    this.props.deleteCow(this.props.cow._id);
   }
 
   handleEdit() {
     if (this.state.editing) {
       let cowName = { name: this.state.newName };
-      this.props.editCow(this.props.cow.id, cowName);
+      console.log(this.props.cow)
+      this.props.editCow(this.props.cow._id, cowName);
       this.setState({ newName: "" });
     }
     this.setState({ editing: !this.state.editing });

@@ -1,0 +1,28 @@
+{
+  "name": "cow-browser",
+  "version": "1.1.0",
+  "description": "jakes cow stable ",
+  "author": "Hack Reactor <curriculum.team@hackreactor.com>",
+  "license": "",
+  "private": false,
+  "scripts": {
+    "react-dev": "webpack -d --watch",
+    "start": "nodemon server/index.js",
+    "live-server": "live-server"
+  },
+  "devDependencies": {
+    "babel-core": "^6.23.1",
+    "babel-loader": "^6.3.2",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.23.0",
+    "webpack": "^2.7.0"
+  },
+  "dependencies": {
+    "axios": "^0.21.0",
+    "body-parser": "^1.19.0",
+    "express": "^4.15.0",
+    "mongoose": "^5.11.10",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  }
+}

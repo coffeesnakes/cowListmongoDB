@@ -1,0 +1,9 @@
+
+1. create an app that dynamically renders data from a file inside a LIST of ENTRIES.
+
+2. refactor app to use manually populated database, retrieve JSON formatted data in the db and render that data.
+
+3. create components to dynamically render  list of ENTRIES
+create functionality to add new items to the database through posting with API
+
+ **Make sure you understand schemas**

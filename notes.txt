@@ -12,6 +12,9 @@ create functionality to add new items to the database through posting with API
 
 
 
+immediate question: wtf is going on with my put lol, it just selects first ID always,
+i mean it works but it doesnt,
+
 Question in addcows somewhere.
 
 Go over flow of put.
@@ -26,3 +29,18 @@ and then the callback is what send all of that back to the client.
 
 vvvvv docs for this  vvvvv
 https://mongoosejs.com/docs/tutorials/findoneandupdate.html
+
+
+{
+        "_id" : ObjectId("5ff508a12f7068e64aab3557"),
+        "name" : "Jacob",
+        "description" : "very confused",
+        "__v" : 0
+}
+
+{
+        "_id" : ObjectId("5ff508a12f7068e64aab3557"),
+        "name" : "jacob",
+        "description" : "very confused",
+        "__v" : 0
+}

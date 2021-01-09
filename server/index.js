@@ -6,7 +6,7 @@ const path = require("path");
 const controllers = require("./controllers/cowtrollers.js");
 
 // parse
-app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 // serve
 app.use("/", express.static(path.join(__dirname, "../client/dist")));

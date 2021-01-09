@@ -2,8 +2,7 @@ const mongoose = require("mongoose");
 
 mongoose.connect("mongodb://localhost/cows", {
   useNewUrlParser: true,
-  useUnifiedTopology: true,
-  useFindAndModify: false
+  useUnifiedTopology: true
 });
 
 const db = mongoose.connection;
@@ -21,6 +20,5 @@ const cowSchema = new mongoose.Schema({
 const Cow = mongoose.model("Cow", cowSchema);
 
 module.exports = {
-  Cow,
-  db
+  Cow
 };

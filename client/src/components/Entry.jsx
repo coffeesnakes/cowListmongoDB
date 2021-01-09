@@ -23,7 +23,7 @@ class Entry extends Component {
   handleEdit() {
     if (this.state.editing) {
       let cowName = { name: this.state.newName };
-      console.log(this.props.cow)
+      console.log('handleEditLOG', this.props.cow)
       this.props.editCow(this.props.cow._id, cowName);
       this.setState({ newName: "" });
     }

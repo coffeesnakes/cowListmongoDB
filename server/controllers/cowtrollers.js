@@ -31,8 +31,10 @@ const deleteCow = (req, res) => {
 };
 
 const editCow = (req, res) => {
-  console.log("sending in controller");
-  model.editCow(req, (err, alteredcowrbon) => {
+  console.log("sending in controller", req);
+  const {id} = req.params;
+  const {name} = req.body;
+  model.editCow({_id: id}, {name}, (err, alteredcowrbon) => {
     if (err) {
       res.sendStatus(400);
     } else {

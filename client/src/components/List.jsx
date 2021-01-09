@@ -5,9 +5,9 @@ const List = props => {
   return (
     <ul className="cows">
 
-      {props.cows.map((cow) => (
+      {props.cows.map((cow, index) => (
 
-      < Entry key={cow._id} cow={cow} deleteCow={props.deleteCow} editCow={props.editCow} />
+      < Entry key={index} cow={cow} deleteCow={props.deleteCow} editCow={props.editCow} />
 
       ))}
 

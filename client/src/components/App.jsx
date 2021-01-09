@@ -51,7 +51,7 @@ class App extends React.Component {
   }
 
   editCow(id, name) {
-    console.log(id, name)
+    console.log('axios put info in App.js', id, name)
     axios.put(`/cows/${id}`, name)
     .then(this.getCows)
     .catch(console.log)
